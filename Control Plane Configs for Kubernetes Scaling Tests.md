@@ -1,5 +1,3 @@
-### DRAFT FOR INCLUSION INTO SIG SCALABILITY OBJECTIVES
-
 ### Scalability Testing/Analysis Environment and Goals
 
 Project practice is to perform baseline scalability testing and analysis on a large single machine (VM or server) with all control plane processing on that single node. The single large machine provides sufficient scalability to scale to 5000 node density tests. The typical machine for testing at this scale is at the larger end of the VM scale available on public cloud providers, but is by no means the largest available. Large cluster runs are typically run with a node emulator (kubemark), with a set of resources to run kubemark typically requiring ~80 machines to simulate 5000 nodes, i.e. 60-ish hollow-nodes per machine.
